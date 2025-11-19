@@ -7,7 +7,6 @@ export const navLinks = [
   { label: "Watch" },
   { label: "Vision" },
   { label: "AirPods" },
-  { label: "TV & Home" },
   { label: "Entertainment" },
   { label: "Accessories" },
   { label: "Contact" },
