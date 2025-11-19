@@ -4,7 +4,7 @@ import { useMacStore } from "../store"
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
 import MacbookModel14 from "./models/Macbook-14"
-import { StudioLights } from "./StudioLights"
+import { StudioLights } from "./three/StudioLights"
 /* ProductViewer component */
 export function ProductViewer() {
     /* Store section */
@@ -12,7 +12,7 @@ export function ProductViewer() {
     return (
         <section id="product-viewer">
             {/* Title sectionvi */}
-            <h2>Take a closer look</h2>
+            <h2 className="text-center">Inspect the MacBook Like Never Before</h2>
             {/* Options section */}
             <div className="controls">
                 <p className="info">MacBook Pro {scale} {color}</p>
