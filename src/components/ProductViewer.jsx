@@ -4,6 +4,7 @@ import { useMacStore } from "../store"
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
 import MacbookModel14 from "./models/Macbook-14"
+import { StudioLights } from "./StudioLights"
 /* ProductViewer component */
 export function ProductViewer() {
     /* Store section */
@@ -69,7 +70,7 @@ export function ProductViewer() {
                 }
             >
                 {/* Lighting */}
-                <ambientLight intensity={1} />
+                <StudioLights />
                 {/* Rendering the models */}
                 <MacbookModel14 scale={0.06} position={[0, 0, 0]} />
                 {/* Enable rotating the model and disabeling zooming */}
