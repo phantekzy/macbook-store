@@ -1,6 +1,7 @@
 /* Import section */
 import { Hero } from "./components/Hero"
 import { NavBar } from "./components/NavBar"
+import { ProductViewer } from "./components/ProductViewer"
 /* App function component */
 function App() {
     return (
@@ -9,6 +10,8 @@ function App() {
             <NavBar />
             {/* Hero section */}
             <Hero />
+            {/* ProductViewer section */}
+            <ProductViewer />
         </main>
     )
 }
