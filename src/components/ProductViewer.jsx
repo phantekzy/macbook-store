@@ -2,13 +2,17 @@
 import clsx from "clsx"
 import { useMacStore } from "../store"
 import { Canvas } from "@react-three/fiber"
-import { OrbitControls } from "@react-three/drei"
 import MacbookModel14 from "./models/Macbook-14"
+/* ThreeJS imports */
 import { StudioLights } from "./three/StudioLights"
+import { useMediaQuery } from "react-responsive"
+import { ModelSwitcher } from "./three/ModelSwitcher"
 /* ProductViewer component */
 export function ProductViewer() {
     /* Store section */
     const { color, scale, setColor, setScale } = useMacStore()
+    /* React responsive */
+    const isMobile = useMediaQuery({ query: '(max-width :1024px)' })
     return (
         <section id="product-viewer">
             {/* Title sectionvi */}
@@ -71,10 +75,8 @@ export function ProductViewer() {
             >
                 {/* Lighting */}
                 <StudioLights />
-                {/* Rendering the models */}
-                <MacbookModel14 scale={0.06} position={[0, 0, 0]} />
                 {/* Enable rotating the model and disabeling zooming */}
-                <OrbitControls enableZoom={false} />
+                <ModelSwitcher scale={isMobile ? scale - 0.03 : scale} isMobile={isMobile} />
             </Canvas>
         </section>
     )

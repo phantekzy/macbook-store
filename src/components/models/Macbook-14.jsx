@@ -1,5 +1,6 @@
+/* Import section */
 import { useGLTF, useTexture } from '@react-three/drei'
-
+/* Macbook 14 texture */
 export default function MacbookModel14(props) {
     const { nodes, materials } = useGLTF('/models/macbook-14-transformed.glb')
     const texture = useTexture('/screen.png')
