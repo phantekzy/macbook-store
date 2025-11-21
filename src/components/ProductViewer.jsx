@@ -2,7 +2,6 @@
 import clsx from "clsx"
 import { useMacStore } from "../store"
 import { Canvas } from "@react-three/fiber"
-import MacbookModel14 from "./models/Macbook-14"
 /* ThreeJS imports */
 import { StudioLights } from "./three/StudioLights"
 import { useMediaQuery } from "react-responsive"
@@ -19,7 +18,7 @@ export function ProductViewer() {
             <h2 className="text-center">Inspect the MacBook Like Never Before</h2>
             {/* Options section */}
             <div className="controls">
-                <p className="info">MacBook Pro {scale} {color}</p>
+                <p className="info text-center">The new MacBook Pro comes in 14" and 16" models, available in two sleek colors: Space Gray and Dark.</p>
                 <div className="flex-center gap-5 mt-5">
 
                     <div className="color-control">

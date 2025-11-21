@@ -18,7 +18,7 @@ export function Hero() {
             {/* Video section */}
             < video ref={videoRef} src="/videos/hero.mp4" autoPlay muted playsInline />
             <button>Order Now</button>
-            <p>Starting at 350,000DA </p>
+            <p className="mt-5">Starting at 350,000 DA</p>
         </section >
     )
 }

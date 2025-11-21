@@ -27,10 +27,12 @@ function moveGroup(group, x) {
 
 /* Model switcher section */
 export function ModelSwitcher({ scale, isMobile }) {
+    const SCALE_LARGE_DESKTOP = 0.08
+    const SCALE_LARGE_MOBILE = 0.05
     /* useRef section */
     const smallMacRef = useRef()
     const largMacRef = useRef()
-    const showLargMac = scale === 0.08 || scale === 0.05
+    const showLargMac = scale === SCALE_LARGE_DESKTOP || scale === SCALE_LARGE_MOBILE
 
     /* useGSAP */
     useGSAP(() => {
