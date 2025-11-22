@@ -6,6 +6,7 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/all"
 import { Showcase } from "./components/Showcase"
 import { Performance } from "./components/Performance"
+import { Features } from "./components/Features"
 /* Register the Plugins */
 gsap.registerPlugin(ScrollTrigger)
 /* App function component */
@@ -22,6 +23,8 @@ function App() {
             <Showcase />
             {/* Performance section */}
             <Performance />
+            {/* Features section */}
+            <Features />
         </main>
     )
 }
