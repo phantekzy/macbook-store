@@ -6,7 +6,6 @@ export function Footer() {
             <div className="info">
                 <p>
                     More ways to shop: Browse online, visit an Apple Store,
-                    or find an authorized Apple reseller near you.
                 </p>
                 <img src="/logo.svg" />
             </div>
